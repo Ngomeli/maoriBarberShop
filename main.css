@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 
@@ -117,4 +118,114 @@ nav ul li a {
 #menuBtn img {
     width: 20px;
     margin-top: 15px;
+}
+
+
+/*---------------------------Features-----------------------------------*/
+
+#features {
+    width: 100%;
+    padding: 70px 0;
+}
+
+.titleText {
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.titleText p {
+    margin: auto;
+    font-size: 20px;
+    color: #009688;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.titleText p::after {
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#019387, #fff);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.titleText h1 {
+    font-size: 50px;
+}
+
+.featureBox {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.features {
+    flex-basis: 50%;
+}
+
+.featureImg {
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.featureImg img {
+    width: 70%;
+    border-radius: 10px;
+}
+
+.features h1 {
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #009688;
+}
+
+.featureDesc {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.featureIcon .fas {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: #009688;
+    border: 1px solid #009688;
+}
+
+@media(max-width:770px) {
+    .bannerText h1 {
+        font-size: 44px;
+    }
+    .bannerBtn a {
+        display: block;
+        margin: 20px auto;
+        /*makes the button to be centered*/
+    }
+    .titleText h1 {
+        font-size: 35px;
+    }
+    .features {
+        flex-basis: 100%;
+    }
+    .featureImg {
+        flex-basis: 100%;
+    }
+    .featureImg img {
+        width: 100%;
+    }
 }
