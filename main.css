@@ -340,6 +340,85 @@ hr {
     transform: translateY(-7px);
 }
 
+
+/*------------------------------footer Section---------------------------*/
+
+#meetUs {
+    padding: 100px 0 20px;
+    background-color: #efefef;
+    position: relative;
+}
+
+.footerRow {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footerLeft,
+.footerRight {
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.footerRight {
+    text-align: right;
+}
+
+.footerRow h1 {
+    margin: 10px 0;
+}
+
+.footerRow p {
+    line-height: 35px;
+}
+
+.footerLeft .far,
+.footerRight .fas {
+    font-size: 20px;
+    color: #009688;
+    margin: 10px;
+}
+
+.footerImg {
+    max-width: 370px;
+    opacity: 0.1;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.socialLinks {
+    text-align: center;
+}
+
+.socialLinks .fab {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid #009688;
+    margin: 40px 5px 0;
+    color: #009688;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.socialLinks .fab:hover {
+    background-color: #009688;
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.socialLinks p {
+    font-size: 12px;
+    margin-top: 20px;
+}
+
 @media(max-width:770px) {
     .bannerText h1 {
         font-size: 44px;
@@ -376,5 +455,13 @@ hr {
     }
     .testimonialCol {
         flex-basis: 100%;
+    }
+    .footerLeft,
+    .footerRight {
+        flex-basis: 100%;
+        font-size: 14px;
+    }
+    .footerImg {
+        top: 25%;
     }
 }
